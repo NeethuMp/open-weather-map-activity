@@ -1,10 +1,9 @@
-package com.example.neethu.openweathermapactivity;
+package com.example.neethu.openweathermapactivity.api;
 
-import java.util.List;
+import com.example.neethu.openweathermapactivity.model.WeatherData;
 
 import retrofit.Callback;
 import retrofit.http.GET;
-import retrofit.http.Path;
 import retrofit.http.Query;
 
 /**

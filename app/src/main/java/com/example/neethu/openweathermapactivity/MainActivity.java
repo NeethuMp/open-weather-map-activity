@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.neethu.openweathermapactivity.api.WeatherAPI;
+import com.example.neethu.openweathermapactivity.model.WeatherData;
+
 import retrofit.Callback;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;

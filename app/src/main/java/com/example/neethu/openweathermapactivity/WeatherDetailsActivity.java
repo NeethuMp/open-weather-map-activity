@@ -108,7 +108,7 @@ public class WeatherDetailsActivity extends AppCompatActivity {
 
 //              String url="http://openweathermap.org/Maps?zoom=12&lat="+ord2+"&lon="+ord+"&layers=B0FTTFF";
 //              String Url="https://www.google.co.in/maps/@9.9899569,76.2884479,15z";
-//                String uri = String.format(Locale.ENGLISH, "geo:%f,%f", ord, ord2);
+//              String uri = String.format(Locale.ENGLISH, "geo:%f,%f", ord, ord2);
                 String Url= "http://maps.google.com/maps?q=loc:" + ord2 + "," + ord + " (" + viewName.getText() + ")";
                 Intent mapIntent=new Intent(Intent.ACTION_VIEW, Uri.parse(Url));
                 mapIntent.setPackage("com.google.android.apps.maps");

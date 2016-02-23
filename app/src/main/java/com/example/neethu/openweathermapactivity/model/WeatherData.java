@@ -1,4 +1,4 @@
-package com.example.neethu.openweathermapactivity;
+package com.example.neethu.openweathermapactivity.model;
 
 import java.util.List;
 
