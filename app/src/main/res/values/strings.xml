@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OpenWeatherMapActivity</string>
+    <string name="heading">Weather in your City</string>
 </resources>

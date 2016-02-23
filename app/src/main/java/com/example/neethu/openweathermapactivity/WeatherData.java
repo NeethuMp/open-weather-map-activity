@@ -1,20 +1,77 @@
 package com.example.neethu.openweathermapactivity;
 
+import java.util.List;
+
 /**
  * Created by neethu on 15/2/16.
  */
 public class WeatherData {
-    private  int id;
-    private  String name;
-    private  String country;
-    private float temp;
-    private  float wind;
-    private  String description;
-    private  float pressure;
-    private  int humidity;
-    private  long sunrise;
-    private  long sunset;
-    private  float coord;
+    public   int id;
+    public   String name;
+    public Coord coord;
+    public List<Weather> weather;
+    public  Main main;
+    public  Wind wind;
+    public  Sys sys;
+//    public   String country;
+//    public   float temp;
+//    public   float wind;
+//    public   String description;
+//    public   float pressure;
+//    public   int humidity;
+//    public   long sunrise;
+//    public   long sunset;
+//    public   float coord;
+
+
+    public Coord getCoord() {
+        return coord;
+    }
+
+    public void setCoord(Coord coord) {
+        this.coord = coord;
+    }
+
+    public List<Weather> getWeatherList() {
+        return weather;
+    }
+
+    public void setWeatherList(List<Weather> weather) {
+        this.weather = weather;
+    }
+
+    public Weather getWeather() {
+        if(weather == null) {
+            return new Weather("Unable to fetch weather");
+        }
+
+        return weather.get(0);
+    }
+
+    public Main getMain() {
+        return main;
+    }
+
+    public void setMain(Main main) {
+        this.main = main;
+    }
+
+    public Wind getWind() {
+        return wind;
+    }
+
+    public void setWind(Wind wind) {
+        this.wind = wind;
+    }
+
+    public Sys getSys() {
+        return sys;
+    }
+
+    public void setSys(Sys sys) {
+        this.sys = sys;
+    }
+
 
     public int getId() {
         return id;
@@ -32,75 +89,4 @@ public class WeatherData {
         this.name = name;
     }
 
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public float getTemp() {
-        return temp;
-    }
-
-    public void setTemp(float temp) {
-        this.temp = temp;
-    }
-
-    public float getWind() {
-        return wind;
-    }
-
-    public void setWind(float wind) {
-        this.wind = wind;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public float getPressure() {
-        return pressure;
-    }
-
-    public void setPressure(float pressure) {
-        this.pressure = pressure;
-    }
-
-    public int getHumidity() {
-        return humidity;
-    }
-
-    public void setHumidity(int humidity) {
-        this.humidity = humidity;
-    }
-
-    public long getSunrise() {
-        return sunrise;
-    }
-
-    public void setSunrise(long sunrise) {
-        this.sunrise = sunrise;
-    }
-
-    public long getSunset() {
-        return sunset;
-    }
-
-    public void setSunset(long sunset) {
-        this.sunset = sunset;
-    }
-
-    public float getCoord() {
-        return coord;
-    }
-
-    public void setCoord(float coord) {
-        this.coord = coord;
-    }
 }
